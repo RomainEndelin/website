@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Romain Endelin</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/highlight/gruvbox&#45;dark.css" rel="stylesheet"> -->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <i class="glyphicon glyphicon-home"></i> Romain Endelin
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="clock"></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="desktop">
+      <div class="row">
+        <div class="col col-md-5">
+          <div class="row window terminal" id="win-presentation">
+            <div class="prompt">whoami</div>
+            <img class="avatar" src="img/avatar.jpg" alt="Romain Endelin" />
+            <p class="term-content">
+              Welcome here, I'm Romain.
+              I am a young and passionate programmer, who tries to do things right.
+              <br>
+              Have a look around, and please tell me how can help you.
+              <br>
+              You can contact me at <a href="mailto:romain@endelin.fr">romain@endelin.fr</a>.
+            </p>
+          </div>
+          <div class="row window" id="win-portfolio">
+            <h2>Portfolio</h2>
+            <div class="address-bar">
+              <span class="btn-prev"></span>
+              <span class="btn-next"></span>
+              <span class="btn-parent"></span>
+              <span class="btn-home"></span>
+              <span class="icon-home"></span>
+              <input type="text" value="/home/romain/portfolio" class="address-input" disabled>
+              <span class="btn-reload"></span>
+            </div>
+            <div class="portfolio-container">
+              <div class="row">
+                <div class="portfolio-item col col-md-4">
+                  <img class="img-responsive portfolio-thumbnail" src="img/ubismart.png" alt="ubismart"/>
+                  <p>UbiSMART</p>
+                </div>
+              </div>
+              <hr class="portfolio-divider">
+              <div class="row">
+                <div class="portfolio-item col col-md-4"></div>
+                <div class="portfolio-item col col-md-4"></div>
+                <div class="portfolio-item col col-md-4"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-7">
+          <div class="row window" id="win-resume">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#resume-md">Plain Text</a></li>
+              <li><a data-toggle="tab" href="#resume-pdf">Formatted</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="resume-md" class="terminal tab-pane fade in active">
+                <h2 class="vim-title">My Resume</h2>
+                <!-- {{{ -->
+                <pre data-src="resources/resume.md" class="line-numbers language-markdown">
+                  <code id="resume-vim"></code>
+                </pre>
+                <!-- }}} -->
+                <div class="row vim-status-bar">
+                  <!-- TODO: Replace by flexboxes -->
+                  <div class="col col-md-2">
+                    <span class="vim-mode">NORMAL</span> <span class="vim-filename">resume.md</span>
+                  </div>
+                  <div class="col col-md-2 col-md-offset-8">
+                    <span class="vim-filetype">markdown</span>
+                  </div>
+                </div>
+              </div>
+              <div id="resume-pdf" class="tab-pane fade">
+              </div>
+            </div>
+        </div>
+        <div class="row window terminal" id="win-footnote">
+          <div class="prompt">cat last-words.txt</div>
+          <p class="term-content">
+            Hey, I hope you are enjoying this page!
+            To tell the truth, I had fun making it.
+            If that made you curious, let's get in touch.
+
+            Romain
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/marked.js"></script>
+    <script src="js/prism.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url : 'resources/resume.md',
+          dataType: 'text',
+          success : function (result) {
+            $('#resume-pdf').html(marked(result));
+            // $('#resume-vim').html(Prism.highlight(result, Prism.languages.markdown));
+          }
+        });
+      });
+
+      var textElem = $('#clock');
+      function updateClock() {
+        var d = new Date();
+        var s = "";
+        s += (10 > d.getHours  () ? "0" : "") + d.getHours  () + ":";
+        s += (10 > d.getMinutes() ? "0" : "") + d.getMinutes() + ":";
+        s += (10 > d.getSeconds() ? "0" : "") + d.getSeconds();
+        textElem.html(s);
+        setTimeout(updateClock, 1000 - d.getTime() % 1000 + 20);
+      }
+      updateClock();
+    </script>
+  </body>
+</html>

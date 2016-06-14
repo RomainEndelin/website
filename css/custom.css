@@ -1,0 +1,134 @@
+/* @import url(https://fonts.googleapis.com/css?family=Inconsolata); */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-size: 100%;
+  background-position: center 5%;
+  background-repeat: no-repeat;
+  color: #e6e1dc;
+  font-family: Consolas, Monaco, 'Ubuntu Mono', monospace;
+}
+
+/* NAVBAR MENU */
+
+.navbar-nav > li > a, .navbar-brand {
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+  height: 24px;
+}
+.navbar {
+  min-height: 24px !important;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, .4);
+  border: none;
+  margin-bottom: 0;
+}
+
+/* DESKTOP LAYOUT */
+
+.desktop > .row {
+  height: calc(100vh - 24px - 30px); /* 24px: navbar, 30px: margins */
+  width: 100%;
+  margin-left: 0;
+}
+
+.col {
+  height: 100%;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.col:first-child {
+  padding-left: 10px;
+}
+
+.window {
+  background-color: rgba(43, 43, 43, .9);
+  min-height: 20px;
+  margin: 0;
+  margin-top: 10px;
+  border: 1px solid rgba(43, 43, 43, .9);
+  overflow: auto;
+}
+
+.terminal {
+  cursor: text;
+}
+
+.window:hover {
+  border: 1px solid #cc241d;
+}
+
+/* PRESENTATION */
+
+#win-presentation { height: 30%; }
+
+.prompt {
+}
+
+.term-content {
+}
+
+.prompt::before {
+  content: "romain@endelin > ~ > ";
+}
+
+.avatar {
+  width: 128px;
+  height: 128px;
+  float: left;
+}
+
+/* PORTFOLIO */
+
+#win-portfolio    { height: 70%; }
+
+.file-address {
+
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item:hover {
+  background-radius: 5px;
+  background-color: #DC8520;
+  color: rgb(43, 43, 43);
+}
+
+.portfolio-thumbnail {
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+
+.portfolio-divider {
+  width: 75%;
+}
+
+/* RESUME */
+
+/* #win-resume       { height: calc(100% + 10px); } */
+#win-resume       { height: 80%; }
+
+pre {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 14px;
+}
+
+#resume-pdf {
+  font-family: 'Merriweather';
+}
+
+
+/* FOOTNOTE */
+
+#win-footnote     { height: 20%; }
