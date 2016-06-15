@@ -1,6 +1,14 @@
 /* @import url(https://fonts.googleapis.com/css?family=Inconsolata); */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(../fonts/ubuntu-mono.css);
+@import url(../fonts/merriweather.css);
+
+@font-face {
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Sauce Code Powerline Regular"),
+      url(../fonts/SourceCodePro.woff2) format("woff2");
+}
 
 * {
   box-sizing: border-box;
@@ -12,7 +20,9 @@ body {
   background-position: center 5%;
   background-repeat: no-repeat;
   color: #e6e1dc;
-  font-family: Consolas, Monaco, 'Ubuntu Mono', monospace;
+  /* font-family: Consolas, Monaco, 'Ubuntu Mono', monospace; */
+  font-family: 'Source Code Pro';
+  font-size: 13px;
 }
 
 /* NAVBAR MENU */
@@ -28,6 +38,15 @@ body {
   background-color: rgba(0, 0, 0, .4);
   border: none;
   margin-bottom: 0;
+}
+
+.menu-item {
+  border: 1px solid #e6e1dc;
+  margin-right: 5px;
+  margin-top: 2px;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* DESKTOP LAYOUT */
@@ -67,34 +86,110 @@ body {
 
 /* PRESENTATION */
 
-#win-presentation { height: 30%; }
+#win-presentation { height: 40%; }
 
 .prompt {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #98971a;
+}
+
+.prompt-1 {
+  background-color: #d79921;
+  color: rgb(43, 43, 43);
+  line-height: 1em;
+}
+
+.separator-1::before {
+  content: "⮀";
+  color: #d79921;
+  background-color: #b0aee5;
+}
+
+.prompt-2 {
+  background-color: #b0aee5;
+  color: rgb(43, 43, 43);
+}
+
+.separator-2::before {
+  content: "⮀";
+  color: #b0aee5;
+  position: relative;
+  left: -1px;
+  font-size: 1.1em;
+  background-color: rgba(43,43,43,0);
 }
 
 .term-content {
-}
-
-.prompt::before {
-  content: "romain@endelin > ~ > ";
+  padding-left: 5px;
 }
 
 .avatar {
   width: 128px;
   height: 128px;
   float: left;
+  padding: 5px;
+  padding-top: 0;
 }
 
 /* PORTFOLIO */
 
-#win-portfolio    { height: 70%; }
+#win-portfolio    { height: 60%; }
 
-.file-address {
+.address-bar {
+  background: linear-gradient(to bottom,
+                              rgba(43, 43, 43, .9),
+                              rgb(23, 23, 23));
+  padding: 5px 15px 5px;
+  border-bottom: 1px solid rgb(33, 33, 33);
+  font-size: 2em;
+  width: 100%;
 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: no-wrap;
+  align-items: center;
+}
+
+.bar-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.address-input {
+  display: flex;
+  align-items: center;
+  color: rgb(43, 43, 43);
+  flex-grow: 1;
+}
+
+.address-input > .fa-folder-open {
+  position: relative;
+  left: 40px;
+}
+
+.address-input > .fa-refresh {
+  position: relative;
+  right: 40px;
+}
+
+.address-input > input {
+  border-radius: 4px;
+  background-color: white;
+  padding-left: 50px;
+  font-size: 16px;
+  height: 3em;
+  width: 100%;
+}
+
+.portfolio-container > .row {
+  margin-right: 0;
 }
 
 .portfolio-item {
   text-align: center;
+  cursor: pointer;
 }
 
 .portfolio-item:hover {
@@ -113,22 +208,113 @@ body {
   width: 75%;
 }
 
+/* MODAL */
+
+.modal-content {
+  background-color: rgb(43, 43, 43);
+}
+
+.close {
+  color: white;
+}
+
 /* RESUME */
 
-/* #win-resume       { height: calc(100% + 10px); } */
-#win-resume       { height: 80%; }
+#win-resume       { height: calc(100% + 10px); }
+/* #win-resume { height: 80%; } */
 
-pre {
-  background-color: rgba(0, 0, 0, 0);
+.tab-ul {
+  background-color: rgb(43, 43, 43);
+}
+
+.tab-content {
+  height: calc(100% - 42px);
+}
+
+#resume-md {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.md-content {
+  height: calc(100% - 42px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.vim-status-bar {
+  background-color: #252733;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  align-items: center;
+
+  margin-bottom: 1.5em;
+}
+
+pre[class*="language-"] {
+  overflow-x: hidden;
+  overflow-y: auto;
   border: none;
-  font-size: 14px;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 13px;
+  font-family: 'Source Code Pro';
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vim-mode {
+  background-color: #98971a;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
+  padding-left: 10px;
+}
+
+.vim-filename {
+  color: #d79921;
+}
+
+.separator-3::before {
+  content: "⮀";
+  color: #98971a;
+  left: -1px;
+  font-size: 1.1em;
+  background-color: #252733;
+}
+
+.vim-filetype {
+  background-color: #d79921;
+  color: rgb(43, 43, 43);
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #resume-pdf {
   font-family: 'Merriweather';
+  padding: 10px;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.download-resume {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.download-resume a {
+  background-color: #d79921;
+  color: rgb(43, 43, 43);
+  padding: 10px;
+}
+
+.download-resume a:hover {
+  text-decoration: none;
 }
 
 
 /* FOOTNOTE */
 
-#win-footnote     { height: 20%; }
+/* #win-footnote     { height: 20%; } */

@@ -8,6 +8,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="css/highlight/gruvbox&#45;dark.css" rel="stylesheet"> -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prism.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
@@ -27,7 +28,27 @@
           </a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li id="clock"></li>
+          <li class="menu-item">
+            <a href="mailto:romain@endelin.fr">
+              <i class="fa fa-envelope"></i> Email
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="https://twitter.com/RomainEndelin" target="_blank">
+              <i class="fa fa-twitter"></i> Twitter
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="https://linkedin.com/in/romain-endelin-93871241" target="_blank">
+              <i class="fa fa-linkedin"></i> Linkedin
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="https://github.com/RomainEndelin" target="_blank">
+              <i class="fa fa-github"></i> Github
+            </a>
+          </li>
+          <li class="menu-item" id="clock"></li>
         </ul>
       </div>
     </nav>
@@ -35,7 +56,9 @@
       <div class="row">
         <div class="col col-md-5">
           <div class="row window terminal" id="win-presentation">
-            <div class="prompt">whoami</div>
+            <div class="prompt">
+              <span class="prompt-1">romain@endelin</span><span class="separator-1"></span><span class="prompt-2">~</span><span class="separator-2"></span>whoami
+            </div>
             <img class="avatar" src="img/avatar.jpg" alt="Romain Endelin" />
             <p class="term-content">
               Welcome here, I'm Romain.
@@ -47,19 +70,23 @@
             </p>
           </div>
           <div class="row window" id="win-portfolio">
-            <h2>Portfolio</h2>
+            <!-- <h2>Portfolio</h2> -->
             <div class="address-bar">
-              <span class="btn-prev"></span>
-              <span class="btn-next"></span>
-              <span class="btn-parent"></span>
-              <span class="btn-home"></span>
-              <span class="icon-home"></span>
-              <input type="text" value="/home/romain/portfolio" class="address-input" disabled>
-              <span class="btn-reload"></span>
+              <div class="bar-item">
+                <i class="fa fa-arrow-left"></i>
+                <i class="fa fa-arrow-right"></i>
+                <i class="fa fa-level-up"></i>
+                <i class="fa fa-home"></i>
+              </div>
+              <div class="bar-item address-input">
+                <i class="fa fa-folder-open"></i>
+                <input type="text" value="/home/romain/portfolio" disabled>
+                <i class="fa fa-refresh"></i>
+              </div>
             </div>
             <div class="portfolio-container">
               <div class="row">
-                <div class="portfolio-item col col-md-4">
+                <div data-toggle="modal" data-target="#modal-ubismart" class="portfolio-item col col-md-4">
                   <img class="img-responsive portfolio-thumbnail" src="img/ubismart.png" alt="ubismart"/>
                   <p>UbiSMART</p>
                 </div>
@@ -76,43 +103,63 @@
         </div>
         <div class="col col-md-7">
           <div class="row window" id="win-resume">
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#resume-md">Plain Text</a></li>
-              <li><a data-toggle="tab" href="#resume-pdf">Formatted</a></li>
+            <ul class="nav nav-tabs tab-ul">
+              <li class="active"><a data-toggle="tab" href="#resume-md">resume.md</a></li>
+              <li><a data-toggle="tab" href="#resume-pdf">resume.pdf</a></li>
             </ul>
 
             <div class="tab-content">
               <div id="resume-md" class="terminal tab-pane fade in active">
-                <h2 class="vim-title">My Resume</h2>
-                <!-- {{{ -->
-                <pre data-src="resources/resume.md" class="line-numbers language-markdown">
-                  <code id="resume-vim"></code>
-                </pre>
-                <!-- }}} -->
-                <div class="row vim-status-bar">
-                  <!-- TODO: Replace by flexboxes -->
-                  <div class="col col-md-2">
-                    <span class="vim-mode">NORMAL</span> <span class="vim-filename">resume.md</span>
+                <div class="md-content">
+                  <pre data-src="resources/resume.md" class="line-numbers language-markdown">
+                    <code id="resume-vim"></code>
+                  </pre>
+                </div>
+                <div class="vim-status-bar">
+                  <div>
+                    <span class="vim-mode">NORMAL </span><span class="separator-3"></span> <span class="vim-filename">resume.md</span>
                   </div>
-                  <div class="col col-md-2 col-md-offset-8">
-                    <span class="vim-filetype">markdown</span>
+                  <div>
+                    <span class="vim-filetype"> markdown</span>
                   </div>
                 </div>
               </div>
               <div id="resume-pdf" class="tab-pane fade">
+                <div class="download-resume"><a href="../resources/resume.pdf" target="_blank">Download the PDF version</a></div>
+                <div id="pdf-content"></div>
               </div>
             </div>
         </div>
-        <div class="row window terminal" id="win-footnote">
-          <div class="prompt">cat last-words.txt</div>
-          <p class="term-content">
-            Hey, I hope you are enjoying this page!
-            To tell the truth, I had fun making it.
-            If that made you curious, let's get in touch.
+        <!-- <div class="row window terminal" id="win&#45;footnote"> -->
+        <!--     <div class="prompt"> -->
+        <!--       <span class="prompt&#45;1">romain@endelin</span><span class="separator&#45;1"></span><span class="prompt&#45;2">~</span><span class="separator&#45;2"></span>cat last&#45;words.txt -->
+        <!--     </div> -->
+        <!--   <p class="term&#45;content"> -->
+        <!--     Hey, I hope you are enjoying this page! -->
+        <!--     To tell the truth, I had fun making it. -->
+        <!--     If that made you curious, let's get in touch. -->
+        <!--  -->
+        <!--     Romain -->
+        <!--   </p> -->
+        <!-- </div> -->
+      </div>
+    </div>
 
-            Romain
-          </p>
+    <!-- Modal -->
+    <div id="modal-ubismart" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">UbiSMART</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
         </div>
+
       </div>
     </div>
 
@@ -129,7 +176,7 @@
           url : 'resources/resume.md',
           dataType: 'text',
           success : function (result) {
-            $('#resume-pdf').html(marked(result));
+            $('#pdf-content').html(marked(result));
             // $('#resume-vim').html(Prism.highlight(result, Prism.languages.markdown));
           }
         });
