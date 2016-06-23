@@ -11,9 +11,10 @@ My skills
 **Main skills:**
 
 * Programming Languages:
-  - Python, Shell, Ruby, Java, etc.
+  - Python, Shell, Ruby, Javascript, Java, etc.
 * Backend Web Development:
   - Ruby on Rails
+  - Node.js
   - Java Spring
 * Front-End Web Development:
   - HTML, CSS (Twitter Bootstrap)
@@ -22,7 +23,7 @@ My skills
   - Extreme Programming, Scrum, Lean, Kanban
   - Test-Driven Development
 * Soft Skills:
-  - Communication (Listening ability, Public speaking)
+  - Communication (Empathetic listening, Public speaking)
   - Focus (Mindful Meditation, Pomodoros)
   - Prioritizing (Eisenhower Matrix)
   - Habit Making (Seinfield Chain)
@@ -38,8 +39,10 @@ My skills
   - Sketch, Invision
 * Data Analysis:
   - Python Scientific Stack, Data Visualization, Machine Learning
+* Project Management Tools
+  - Pivotal Tracker, Trello, Slack, Github, etc.
 * Business Management:
-  - Entrepreneurship, Freelancing
+  - Entrepreneurship, Freelancing, Business Development
 * Programming Environment:
   - Linux, MacOSX, Vim, IntelliJ IDEA, Git, Dotfiles Versioning, etc.
 
@@ -55,7 +58,7 @@ My skills
 My background
 -------------
 
-**Work experiences:**
+**Professional experiences:**
 
 * 2016: Freelancing
   - I offer my services in developing web applications
@@ -65,7 +68,7 @@ My background
 
 **Education:**
 
-* 2016: treehouse.com - Intensive learning of programming and related skills.
+* 2016: teamtreehouse.com - Intensive learning of web development and related skills.
 * 2012–2016: PhD Thesis, on Smart-Home and Ambient Assisted Living.
   - I used the Internet of Things and Artificial Intelligence to assist elderly people in their daily life.
 * 2009–2012: Engineering Degree in Computer Sciences, ISIMA, FRANCE.

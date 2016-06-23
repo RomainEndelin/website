@@ -119,12 +119,12 @@
         <div class="col col-sm-12 col-md-7">
           <div class="window" id="win-resume">
             <ul class="nav nav-tabs tab-ul">
-              <li class="active"><a data-toggle="tab" href="#resume-md">resume.md</a></li>
-              <li><a data-toggle="tab" href="#resume-pdf">resume.pdf</a></li>
+              <li><a data-toggle="tab" href="#resume-md">resume.md</a></li>
+              <li class="active"><a data-toggle="tab" href="#resume-pdf">resume.pdf</a></li>
             </ul>
 
             <div class="tab-content">
-              <div id="resume-md" class="terminal tab-pane fade in active">
+              <div id="resume-md" class="terminal tab-pane fade">
                 <div class="md-content">
                   <pre data-src="resources/resume.md" class="line-numbers language-markdown">
                     <code id="resume-vim"></code>
@@ -139,7 +139,7 @@
                   </div>
                 </div>
               </div>
-              <div id="resume-pdf" class="tab-pane fade">
+              <div id="resume-pdf" class="tab-pane fade in active">
                 <div class="download-resume"><a href="../resources/resume.pdf" target="_blank">Download the PDF version</a></div>
                 <div id="pdf-content"></div>
               </div>
@@ -265,6 +265,26 @@
         setTimeout(updateClock, 1000 - d.getTime() % 1000 + 20);
       }
       updateClock();
+
+      // if (window.location.hash == "#ubismart") {
+      //     $('#modal-ubismart').modal('show');
+      // }
+      //
+      // if (window.location.hash == "#knot") {
+      //     $('#modal-knot').modal('show');
+      // }
+      //
+      // if (window.location.hash == "#thesis") {
+      //     $('#modal-thesis').modal('show');
+      // }
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79861309-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
   </body>
 </html>
