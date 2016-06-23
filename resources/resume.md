@@ -1,111 +1,111 @@
-Romain Endelin,
+Romain Endelin
+===============
 PhD, Agile Software Engineer
 
-    “Romain never settles for good enough, he has carried our team forward on many topics”
+    “Romain never settles for good enough,
+     he has carried our team forward on many topics”
 
-My Professional Experiences
-========================
+My skills
+---------
 
-Computer Sciences
------------------
+**Main skills:**
 
-* 2012–2016: PhD Thesis, on Smart-Home and Ambient Assisted Living,
-  Institut Mines-Télécom — CNRS LIRMM, Montpellier, FRANCE.
+* Programming Languages:
+  - Python, Shell, Ruby, Java, etc.
+* Backend Web Development:
+  - Ruby on Rails
+  - Java Spring
+* Front-End Web Development:
+  - HTML, CSS (Twitter Bootstrap)
+  - Javascript (AngularJS, EmberJS)
+* Agile Methods:
+  - Extreme Programming, Scrum, Lean, Kanban
+  - Test-Driven Development
+* Soft Skills:
+  - Communication (Listening ability, Public speaking)
+  - Focus (Mindful Meditation, Pomodoros)
+  - Prioritizing (Eisenhower Matrix)
+  - Habit Making (Seinfield Chain)
+  - Productivity (Getting Things Done)
+  - Problem Solving (Divide and Conquer)
 
-  - Using the Internet of Things to assist elderly people in their daily life.
-    - Creating smart-homes, using Raspberry Pis and the Ansible provisioning tool.
-    - Using Artificial Intelligence to recognize activities, from sensor events.
-    - Developing a web application to process and visualize activities, using Node.js.
-  - Real contacts with elderly people, deployment of our system in nursing homes.
-  - Claiming to “Run a research team as a startup”, setting up an agile methodology and remote communication for our French-Singaporean team.
+**Secondary skills:**
 
-* 2012: Research Internship, CNRS IPAL, SINGAPORE, Preceding my PhD Thesis.
+* DevOps:
+  - Linux System Administration
+  - Continuous Integration, PaaS, Ansible, Docker
+* Web Design, UX Design:
+  - Sketch, Invision
+* Data Analysis:
+  - Python Scientific Stack, Data Visualization, Machine Learning
+* Business Management:
+  - Entrepreneurship, Freelancing
+* Programming Environment:
+  - Linux, MacOSX, Vim, IntelliJ IDEA, Git, Dotfiles Versioning, etc.
 
-  - Setting up automatic detection and integration of hardware devices in a smart-home.
-
-* 2009: Internship in Web Development, Webpulser, Lille, FRANCE.
-
-  - Using the Ruby on Rails framework for web development.
-  - In charge of experimenting Pair Programming and Test-Driven Development inside the team.
-
-Other Experiences
------------------
-
-* 2011: Volunteering — Organic Farming, WWOOFING, Arghakhachi, NEPAL.
-
-  Living within a family of Nepalese farmers, helping to maintain the farm, learning from cultural exchanges.
-
-* 2010: Introduction to Computers, Clermont-Ferrand, FRANCE.
-
-  Teaching the basics of computing to an elderly woman, to fund a student NGO.
-
-Education
-=========
-
-* 2012–Dec. 2015: Doctoral Degree in Computer Sciences, Institut Mines-Télécom — CNRS LIRMM, Montpellier, FRANCE.
-
-  Semantic Modelling of Human Behaviour for Context-Aware Applications
-
-* 2009–2012: Engineering Degree in Computer Sciences, ISIMA, Clermont-Ferrand, FRANCE.
-
-  “Grande École” on Software Engineering and Applied Mathematics.
-  - 3rd year – International Class.
-
-* 2011–2012: Master Degree in Computer Sciences, Harbin Institute of Technology (哈 尔滨工业大学), Harbin, CHINA.
-
-  Double diploma between ISIMA and the Harbin Institute of Technology.
-
-Languages
-=========
+**Languages:**
 
 - French: Native Speaker
 - English: Fluent – Spoken on a daily basis
 - Indonesian: Intermediate
 - Spanish: Intermediate
 - Chinese: Basic
-- Arabic: Beginner – Currently learning
+- Arabic: Beginner
 
-Skills
-======
+My background
+-------------
 
-General Skills
---------------
+**Work experiences:**
 
-- Communication: Good spoken and written communication, ability to use simple words for complex issues.
-- Personal Productivity: Organization (Getting Things Done R ), Focus (Mindful Meditation, Pomodoros), Prioritizing (Eisenhower Matrix), Habit Making (Seinfield Chain).
-- Problem Solving: Systematic approach to problem solving — Divide and Conquer.
+* 2016: Freelancing
+  - I offer my services in developing web applications
+* 2012-2016: PhD Thesis
+* 2009: Internship - Webpulser
+  - Web development in Ruby on Rails, in charge of encouraging agile methods
 
-Computer Skills
----------------
+**Education:**
 
-- Programming Languages: Python, Javascript, Shell, HTML/CSS, Java, Ruby, C++, C, VimL
-- Backend Web Frameworks: Ruby on Rails, Node.js, Sails.js, Flask
-- Frontend Web Framework: Ember.js, Phonegap (Mobile Web Development), JQuery, D3.js, Bootstrap
-- Programming Workflow: Test Driven Development (Cucumber, RSpec), Pair Programming (side- by-side or remote), Code documentation (Sphinx)
-- Team Management: Scrum (Pivotal Tracker), Github, Slack, Kanban (Trello)
-- Coding Environment: Vim, Git, ZSH, Tmux, Sed, Ack, AwesomeWM, Dotfiles Versioning, etc.
-- Data Analysis: Python Scientific Stack, Bayesian Methods, Data Mining, Statistics
-- System Administration: Arch Linux, Debian, Virtual Private Server (Digital Ocean), Provisioning (Ansible), Web Server (NGINX, Apache), Mail Server (Dovecot, Postfix), etc.
-- Embedded Computing: Home Automation, Raspberry Pi, Arduino, Smart TV (Kodi)
-- Text Documents: Markdown, LATEX, LibreOffice Suite
+* 2016: treehouse.com - Intensive learning of programming and related skills.
+* 2012–2016: PhD Thesis, on Smart-Home and Ambient Assisted Living.
+  - I used the Internet of Things and Artificial Intelligence to assist elderly people in their daily life.
+* 2009–2012: Engineering Degree in Computer Sciences, ISIMA, FRANCE.
+* 2011–2012: Master Degree in Computer Sciences, Harbin Institute of Technology, CHINA.
 
-Extracurricular Activities
-==========================
+**Other experiences:**
 
-Associations
-------------
+* 2016: Teaching maths and programming to medium school student.
+* 2011: Volunteering — Organic Farming, WWOOFING - NEPAL:
+  - I lived inside a family of Nepalese farmers
+  - In return, I helped to maintain the farm
+  - Everyone learned from cultural exchanges
+* 2010: Teaching basic computer skills:
+  - I taught the basics of computing to an elderly woman, to fund a student NGO.
 
+**Associations:**
+
+* 2016: "Main dans la main", Organizer:
+  - A social event inside my village, promoting peace and diversity.
 * 2013–2015: PhD Students’ Council in LIRMM.
+* 2010–2011: ISIMA Sans Frontières, Vice-President:
+  - Student NGO aiming to develop the computer infrastructure of universities in Mali.
+* 2007–2009: University Student Association, Secretary.
+* 2008–Today: "April", French association to support Free Software.
 
-* 2010–2011: ISIMA Sans Frontières, Vice-President.
+My hobbies
+----------
 
-  Student NGO aiming to develop the computer infrastructure of universities in Mali.
+**Travelling:**
 
-* 2008–Today: April, French association to support Free Software.
+* Indonesia, Quebec, China, Singapore, Eastern Europe.
+* More to come?
 
-Hobbies
-=======
+**Reading:**
 
-- Travelling: Indonesia, Quebec, China, Singapore, Eastern Europe
-- Reading: Fantasy, Science-Fiction, Non-Fiction
-- Science and History: Mathematics, Astrophysics, History, Psychology
+* Technical books (Agile methods, Programming, Lean Startup, Business Development)
+* Non-Fiction (Self-improvement, Communication, Psychology)
+* Fantasy (JRR Tolkien will always be number one!)
+* Science-Fiction (Ray Bradbury, Isaac Asimov, Dan Simmons, Aldous Huxley...)
+
+**Science and History:**
+
+- Mathematics, Astrophysics, History, Psychology

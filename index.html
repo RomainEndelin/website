@@ -7,7 +7,6 @@
     <title>Romain Endelin</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="css/highlight/gruvbox&#45;dark.css" rel="stylesheet"> -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prism.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -27,49 +26,53 @@
             <i class="glyphicon glyphicon-home"></i> Romain Endelin
           </a>
         </div>
+        <ul class="nav navbar-nav navbar-left">
+          <li class="menu-link">
+            <span id="menu-blog" class="menu-link-content">Blog <sup>(coming soon)</sup></span>
+          </li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="menu-item">
-            <a href="mailto:romain@endelin.fr">
+          <li class="menu-item" id="menu-email">
+            <a class="menu-item-content" href="mailto:romain@endelin.fr">
               <i class="fa fa-envelope"></i> Email
             </a>
           </li>
-          <li class="menu-item">
-            <a href="https://twitter.com/RomainEndelin" target="_blank">
+          <li class="menu-item" id="menu-twitter">
+            <a class="menu-item-content" href="https://twitter.com/RomainEndelin" target="_blank">
               <i class="fa fa-twitter"></i> Twitter
             </a>
           </li>
-          <li class="menu-item">
-            <a href="https://linkedin.com/in/romain-endelin-93871241" target="_blank">
+          <li class="menu-item" id="menu-linkedin">
+            <a class="menu-item-content" href="https://linkedin.com/in/romain-endelin-93871241" target="_blank">
               <i class="fa fa-linkedin"></i> Linkedin
             </a>
           </li>
-          <li class="menu-item">
-            <a href="https://github.com/RomainEndelin" target="_blank">
+          <li class="menu-item" id="menu-github">
+            <a class="menu-item-content" href="https://github.com/RomainEndelin" target="_blank">
               <i class="fa fa-github"></i> Github
             </a>
           </li>
-          <li class="menu-item" id="clock"></li>
+          <li class="menu-item hidden-xs" id="menu-clock">
+            <span class="menu-item-content">
+              <i class="fa fa-clock-o"></i>
+              <span id="clock"></span>
+            </span>
+          </li>
         </ul>
       </div>
     </nav>
     <div class="desktop">
       <div class="row">
-        <div class="col col-md-5">
-          <div class="row window terminal" id="win-presentation">
+        <div class="col col-sm-12 col-md-5">
+          <div class="window terminal" id="win-presentation">
             <div class="prompt">
               <span class="prompt-1">romain@endelin</span><span class="separator-1"></span><span class="prompt-2">~</span><span class="separator-2"></span>whoami
             </div>
             <img class="avatar" src="img/avatar.jpg" alt="Romain Endelin" />
-            <p class="term-content">
-              Welcome here, I'm Romain.
-              I am a young and passionate programmer, who tries to do things right.
-              <br>
-              Have a look around, and please tell me how can help you.
-              <br>
-              You can contact me at <a href="mailto:romain@endelin.fr">romain@endelin.fr</a>.
+            <p id="whoami-content" class="term-content">
             </p>
           </div>
-          <div class="row window" id="win-portfolio">
+          <div class="window" id="win-portfolio">
             <!-- <h2>Portfolio</h2> -->
             <div class="address-bar">
               <div class="bar-item">
@@ -85,24 +88,36 @@
               </div>
             </div>
             <div class="portfolio-container">
-              <div class="row">
-                <div data-toggle="modal" data-target="#modal-ubismart" class="portfolio-item col col-md-4">
-                  <img class="img-responsive portfolio-thumbnail" src="img/ubismart.png" alt="ubismart"/>
-                  <p>UbiSMART</p>
-                </div>
+              <div data-toggle="modal" data-target="#modal-thesis" class="portfolio-item">
+                <i class="fa fa-folder"></i>
+                <!-- <img class="img&#45;responsive portfolio&#45;thumbnail" src="img/thesis.png" alt="thesis&#45;thumbnail"/> -->
+                <p>My PhD Thesis</p>
               </div>
-              <hr class="portfolio-divider">
-              <div class="row">
-                <div class="portfolio-item col col-md-4"></div>
-                <div class="portfolio-item col col-md-4"></div>
-                <div class="portfolio-item col col-md-4"></div>
+              <div data-toggle="modal" data-target="#modal-ubismart" class="portfolio-item">
+                <i class="fa fa-folder"></i>
+                <!-- <img class="img&#45;responsive portfolio&#45;thumbnail" src="img/ubismart.png" alt="ubismart&#45;thumbnail"/> -->
+                <p>UbiSMART</p>
               </div>
-
+              <div data-toggle="modal" data-target="#modal-knot" class="portfolio-item">
+                <i class="fa fa-folder"></i>
+                <!-- <img class="img&#45;responsive portfolio&#45;thumbnail" src="img/knot.png" alt="knot&#45;thumbnail"/> -->
+                <p>Knot</p>
+              </div>
+              <div data-toggle="modal" data-target="#modal-training" class="portfolio-item">
+                <i class="fa fa-folder"></i>
+                <!-- <img class="img&#45;responsive portfolio&#45;thumbnail" src="img/ribbit.png" alt="training&#45;thumbnail"/> -->
+                <p>Training content</p>
+              </div>
+              <div data-toggle="modal" data-target="#modal-dotfiles" class="portfolio-item">
+                <i class="fa fa-folder"></i>
+                <!-- <img class="img&#45;responsive portfolio&#45;thumbnail" src="img/dotfiles.png" alt="dotfiles&#45;thumbnail"/> -->
+                <p>My Dotfiles</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-md-7">
-          <div class="row window" id="win-resume">
+        <div class="col col-sm-12 col-md-7">
+          <div class="window" id="win-resume">
             <ul class="nav nav-tabs tab-ul">
               <li class="active"><a data-toggle="tab" href="#resume-md">resume.md</a></li>
               <li><a data-toggle="tab" href="#resume-pdf">resume.pdf</a></li>
@@ -130,22 +145,25 @@
               </div>
             </div>
         </div>
-        <!-- <div class="row window terminal" id="win&#45;footnote"> -->
-        <!--     <div class="prompt"> -->
-        <!--       <span class="prompt&#45;1">romain@endelin</span><span class="separator&#45;1"></span><span class="prompt&#45;2">~</span><span class="separator&#45;2"></span>cat last&#45;words.txt -->
-        <!--     </div> -->
-        <!--   <p class="term&#45;content"> -->
-        <!--     Hey, I hope you are enjoying this page! -->
-        <!--     To tell the truth, I had fun making it. -->
-        <!--     If that made you curious, let's get in touch. -->
-        <!--  -->
-        <!--     Romain -->
-        <!--   </p> -->
-        <!-- </div> -->
       </div>
     </div>
 
     <!-- Modal -->
+    <div id="modal-thesis" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">My PhD Thesis</h4>
+          </div>
+          <div id="thesis-content" class="modal-body">
+          </div>
+        </div>
+
+      </div>
+    </div>
     <div id="modal-ubismart" class="modal fade" role="dialog">
       <div class="modal-dialog">
 
@@ -155,8 +173,52 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">UbiSMART</h4>
           </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div id="ubismart-content" class="modal-body">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="modal-knot" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Knot</h4>
+          </div>
+          <div id="knot-content" class="modal-body">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="modal-training" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Training content</h4>
+          </div>
+          <div id="training-content" class="modal-body">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="modal-dotfiles" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">My dotfiles</h4>
+          </div>
+          <div id="dotfiles-content" class="modal-body">
           </div>
         </div>
 
@@ -171,14 +233,24 @@
     <script src="js/prism.js"></script>
 
     <script>
+      var contents = {
+        "#whoami-content": "whoami.md",
+        "#pdf-content": "resume.md",
+        "#dotfiles-content": "portfolio-dotfiles.md",
+        "#training-content": "portfolio-training.md",
+        "#ubismart-content": "portfolio-ubismart.md",
+        "#knot-content": "portfolio-knot.md",
+        "#thesis-content": "portfolio-thesis.md"
+      }
       $(document).ready(function () {
-        $.ajax({
-          url : 'resources/resume.md',
-          dataType: 'text',
-          success : function (result) {
-            $('#pdf-content').html(marked(result));
-            // $('#resume-vim').html(Prism.highlight(result, Prism.languages.markdown));
-          }
+        $.each(contents, function(key, value) {
+          $.ajax({
+            url : 'resources/' + value,
+            dataType: 'text',
+            success : function (result) {
+              $(key).html(marked(result));
+            }
+          });
         });
       });
 
